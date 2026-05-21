@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Atelier</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Atelier</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">&#9776;</button>
+  </nav>
+
+  <main class="contact-page">
+
+    <div class="contact-layout">
+
+      <div class="contact-left">
+        <span class="hero-eyebrow">Get in touch</span>
+        <h1>Let's talk<br/><em>about art</em></h1>
+        <p class="contact-lead">Whether you'd like to purchase a piece, commission something new, or simply say hello — I'd love to hear from you.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="contact-detail-label">Studio</span>
+            <span>Amsterdam, Netherlands</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label">Response time</span>
+            <span>Within 2–3 days</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label">Commissions</span>
+            <span>Currently open</span>
+          </div>
+        </div>
+
+        <div class="contact-decoration"></div>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="purchase">Purchasing a piece</option>
+              <option value="commission">Commission request</option>
+              <option value="studio">Studio visit</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="piece">Which piece? (optional)</label>
+            <input type="text" id="piece" name="piece" placeholder="e.g. Golden Hour #3" />
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me a little about yourself and what you're looking for..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <span class="form-submit-text">Send message</span>
+            <span class="form-submit-arrow">→</span>
+          </button>
+
+        </form>
+
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">✓</div>
+          <h3>Message sent!</h3>
+          <p>Thank you for reaching out. I'll be in touch within a few days.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Atelier · All pieces are one-of-a-kind originals</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+      // In production, hook up to Formspree or Netlify Forms
+      // For now simulate submission
+      form.style.opacity = '0';
+      setTimeout(() => {
+        form.style.display = 'none';
+        success.style.display = 'flex';
+        success.style.opacity = '0';
+        setTimeout(() => { success.style.opacity = '1'; }, 50);
+      }, 400);
+    }
+  </script>
+</body>
+</html>

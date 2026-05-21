@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier — Handmade Art</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Atelier</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Handmade with intention</span>
+      <h1>Each piece<br/><em>tells a story</em></h1>
+      <p>Original art — crafted by hand, one at a time.</p>
+    </div>
+    <div class="hero-tape hero-tape--1"></div>
+    <div class="hero-tape hero-tape--2"></div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <section class="filter-bar">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="painting">Painting</button>
+    <button class="filter-btn" data-filter="textile">Textile</button>
+    <button class="filter-btn" data-filter="sculpture">Sculpture</button>
+    <button class="filter-btn" data-filter="mixed">Mixed Media</button>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <main class="gallery" id="gallery">
+
+    <!-- PIECE 1 -->
+    <article class="piece" data-category="painting" onclick="openPiece('piece1')">
+      <div class="piece-img-wrap">
+        <div class="piece-img" style="background: linear-gradient(135deg,#c9a96e,#8b5e3c);"></div>
+        <span class="piece-badge">Painting</span>
+      </div>
+      <div class="piece-info">
+        <h2 class="piece-title">Golden Hour #3</h2>
+        <p class="piece-medium">Acrylic on canvas · 60×80 cm</p>
+        <span class="piece-price">€240</span>
+      </div>
+    </article>
+
+    <!-- PIECE 2 -->
+    <article class="piece" data-category="textile" onclick="openPiece('piece2')">
+      <div class="piece-img-wrap">
+        <div class="piece-img" style="background: linear-gradient(135deg,#6b7fb3,#3d4f7c);"></div>
+        <span class="piece-badge">Textile</span>
+      </div>
+      <div class="piece-info">
+        <h2 class="piece-title">Woven Tides</h2>
+        <p class="piece-medium">Hand-woven wool · 45×60 cm</p>
+        <span class="piece-price">€380</span>
+      </div>
+    </article>
+
+    <!-- PIECE 3 -->
+    <article class="piece" data-category="sculpture" onclick="openPiece('piece3')">
+      <div class="piece-img-wrap">
+        <div class="piece-img" style="background: linear-gradient(135deg,#b0a090,#6b5a4e);"></div>
+        <span class="piece-badge">Sculpture</span>
+      </div>
+      <div class="piece-info">
+        <h2 class="piece-title">Vessel No. 7</h2>
+        <p class="piece-medium">Hand-thrown ceramic · 22 cm tall</p>
+        <span class="piece-price">€195</span>
+      </div>
+    </article>
+
+    <!-- PIECE 4 -->
+    <article class="piece" data-category="mixed" onclick="openPiece('piece4')">
+      <div class="piece-img-wrap">
+        <div class="piece-img" style="background: linear-gradient(135deg,#d4a5a5,#8b4a4a);"></div>
+        <span class="piece-badge">Mixed Media</span>
+      </div>
+      <div class="piece-info">
+        <h2 class="piece-title">Bloom & Ash</h2>
+        <p class="piece-medium">Paper, ink & dried botanicals · 50×70 cm</p>
+        <span class="piece-price">€310</span>
+      </div>
+    </article>
+
+    <!-- PIECE 5 -->
+    <article class="piece" data-category="painting" onclick="openPiece('piece5')">
+      <div class="piece-img-wrap">
+        <div class="piece-img" style="background: linear-gradient(135deg,#a8c5b0,#4a7c59);"></div>
+        <span class="piece-badge">Painting</span>
+      </div>
+      <div class="piece-info">
+        <h2 class="piece-title">Forest Breath</h2>
+        <p class="piece-medium">Watercolour on paper · 40×55 cm</p>
+        <span class="piece-price">€165</span>
+      </div>
+    </article>
+
+    <!-- PIECE 6 -->
+    <article class="piece" data-category="textile" onclick="openPiece('piece6')">
+      <div class="piece-img-wrap">
+        <div class="piece-img" style="background: linear-gradient(135deg,#e8d5b0,#c4a35a);"></div>
+        <span class="piece-badge">Textile</span>
+      </div>
+      <div class="piece-info">
+        <h2 class="piece-title">Macramé Moon</h2>
+        <p class="piece-medium">Natural cotton cord · 35×90 cm</p>
+        <span class="piece-price">€220</span>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closePiece(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closePiece()">&#x2715;</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalMedium" class="modal-medium"></p>
+          </div>
+          <div class="modal-price-wrap">
+            <span id="modalPrice" class="modal-price"></span>
+            <a href="contact.html" class="modal-buy-btn">Enquire to Buy</a>
+          </div>
+        </div>
+        <p id="modalDesc" class="modal-desc"></p>
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Atelier · All pieces are one-of-a-kind originals</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
