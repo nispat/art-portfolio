@@ -15,6 +15,7 @@
     <a href="index.html" class="nav-logo">Atelier</a>
     <ul class="nav-links">
       <li><a href="index.html">Gallery</a></li>
+      <li><a href="classes.html">Classes</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
@@ -109,20 +110,17 @@
 
   <script src="js/gallery.js"></script>
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('contactForm');
-      const success = document.getElementById('formSuccess');
-      // In production, hook up to Formspree or Netlify Forms
-      // For now simulate submission
-      form.style.opacity = '0';
-      setTimeout(() => {
-        form.style.display = 'none';
-        success.style.display = 'flex';
-        success.style.opacity = '0';
-        setTimeout(() => { success.style.opacity = '1'; }, 50);
-      }, 400);
-    }
+    async function handleSubmit(e) {
+		e.preventDefault();
+		const form = document.getElementById('contactForm');
+		const data = new FormData(form);
+		await fetch('https://formspree.io/f/xwvzopay', {
+			method: 'POST', body: data, headers: { Accept: 'application/json' }
+		});
+		// show success
+		form.style.display = 'none';
+		document.getElementById('formSuccess').style.display = 'flex';
+	}
   </script>
 </body>
 </html>

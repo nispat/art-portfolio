@@ -778,3 +778,443 @@ body {
 .piece:nth-child(4) { animation-delay: 0.2s; }
 .piece:nth-child(5) { animation-delay: 0.25s; }
 .piece:nth-child(6) { animation-delay: 0.3s; }
+
+/* ============================================================
+   CLASSES PAGE
+   ============================================================ */
+
+/* Hero */
+.classes-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.classes-hero-inner { max-width: 540px; }
+
+.classes-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.classes-hero h1 em { color: var(--accent); font-style: italic; }
+
+.classes-hero p {
+  font-size: 1.15rem;
+  color: var(--warm-mid);
+  max-width: 45ch;
+  margin-bottom: 2rem;
+}
+
+.classes-hero-cta {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-light);
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.classes-hero-cta:hover { color: var(--ink); border-color: var(--ink); }
+
+/* Decorative shapes in hero */
+.classes-hero-deco {
+  position: relative;
+  height: 380px;
+}
+
+.deco-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--accent-light);
+}
+
+.deco-circle--lg {
+  width: 300px; height: 300px;
+  top: 10%; right: 5%;
+  background: linear-gradient(135deg, rgba(196,120,58,0.08), rgba(232,196,160,0.15));
+}
+
+.deco-circle--sm {
+  width: 120px; height: 120px;
+  bottom: 5%; right: 40%;
+  background: rgba(196,120,58,0.05);
+}
+
+.deco-brushstroke {
+  position: absolute;
+  top: 50%; left: 20%;
+  width: 160px; height: 8px;
+  background: var(--accent);
+  opacity: 0.25;
+  border-radius: 4px;
+  transform: rotate(-12deg);
+}
+
+/* Why strip */
+.classes-why {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 3rem clamp(1.5rem, 5vw, 4rem);
+}
+
+.classes-why-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-item { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 1.25rem; }
+
+.why-icon {
+  display: block;
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.why-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
+.why-item p { font-size: 0.92rem; color: rgba(245,240,232,0.65); line-height: 1.6; }
+
+/* Classes section */
+.classes-section {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+.classes-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Cards grid */
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.class-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--transition), box-shadow var(--transition);
+  animation: fadeUp 0.5s ease both;
+}
+
+.class-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(26,22,18,0.1);
+}
+
+/* Accent top border per age group */
+.class-card--kids    { border-top: 3px solid #c4783a; }
+.class-card--tweens  { border-top: 3px solid #6b7fb3; }
+.class-card--teens   { border-top: 3px solid #4a7c59; }
+.class-card--adults  { border-top: 3px solid #8b5e8b; }
+.class-card--private { border-top: 3px solid #b0a090; }
+
+.class-card--featured {
+  border-color: var(--accent);
+  border-width: 2px;
+  border-top-width: 3px;
+}
+
+.class-card-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: var(--cream);
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+}
+
+.class-card-top {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.class-age-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.class-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.class-tagline {
+  font-style: italic;
+  color: var(--warm-mid);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.class-card-body {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+}
+
+.class-desc {
+  color: var(--warm-mid);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.65;
+}
+
+/* Detail list */
+.class-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.class-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.88rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--line);
+  gap: 1rem;
+}
+
+.detail-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warm-mid);
+  white-space: nowrap;
+}
+
+/* Price */
+.class-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: rgba(196,120,58,0.05);
+  border-radius: 3px;
+  margin-top: auto;
+}
+
+.class-price { display: flex; flex-direction: column; gap: 0.1rem; }
+
+.price-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.price-note {
+  font-size: 0.78rem;
+  color: var(--warm-mid);
+}
+
+.price-per {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+/* Card footer */
+.class-card-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.register-btn {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.65rem 1.25rem;
+  background: var(--ink);
+  color: var(--cream);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+  white-space: nowrap;
+}
+
+.register-btn:hover { background: var(--accent); }
+
+.register-btn--featured {
+  background: var(--accent);
+}
+
+.register-btn--featured:hover { background: var(--ink); }
+
+.class-spots {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--warm-mid);
+}
+
+.class-spots--urgent { color: #c0392b; }
+
+/* Registration callout */
+.reg-callout {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+.reg-callout-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.reg-callout-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.reg-callout-text p {
+  color: var(--warm-mid);
+  margin-bottom: 0.75rem;
+  max-width: 45ch;
+}
+
+.reg-note {
+  font-size: 0.88rem;
+  font-style: italic;
+  padding: 0.75rem 1rem;
+  border-left: 2px solid var(--accent-light);
+  margin-top: 1rem;
+}
+
+.reg-callout-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reg-step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.reg-step-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  width: 2rem; height: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.reg-step strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.reg-step p { font-size: 0.9rem; color: var(--warm-mid); margin: 0; }
+
+/* FAQ */
+.classes-faq {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+}
+
+.faq-item h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p { font-size: 0.92rem; color: var(--warm-mid); }
+
+.faq-item a { color: var(--accent); }
+
+/* Card stagger */
+.class-card:nth-child(1) { animation-delay: 0.05s; }
+.class-card:nth-child(2) { animation-delay: 0.1s; }
+.class-card:nth-child(3) { animation-delay: 0.15s; }
+.class-card:nth-child(4) { animation-delay: 0.2s; }
+.class-card:nth-child(5) { animation-delay: 0.25s; }
+.class-card:nth-child(6) { animation-delay: 0.3s; }
+
+/* Responsive classes page */
+@media (max-width: 768px) {
+  .classes-hero { grid-template-columns: 1fr; }
+  .classes-hero-deco { display: none; }
+  .reg-callout-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+}
