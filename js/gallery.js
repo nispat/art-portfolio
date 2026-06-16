@@ -68,7 +68,7 @@ async function loadGallery() {
       // Card cover: first image src, or its placeholder colour
       const cover = article.images[0] || {};
       const coverStyle = cover.src
-        ? `background-image:url('${cover.src}');background-size:contain;background-repeat:no-repeat;background-position:center`
+        ? `background-image:url('${cover.src}');background-size:cover;background-position:center`
         : `background:${cover.color || '#ccc'}`;
 
       const label      = CATEGORY_LABEL[article.category] || article.category;
