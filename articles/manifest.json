@@ -1,0 +1,481 @@
+{
+  "generated": "2026-06-16T13:26:38.310Z",
+  "articles": [
+    {
+      "id": "2026-07-yellowblue1",
+      "path": "articles/2026-07-yellowblue1",
+      "title": "Yello Blue",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-07-yellowblue1/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-yellowblue1/picture-002.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "2026-07-yellowblue",
+      "path": "articles/2026-07-yellowblue",
+      "title": "Yello Blue",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-07-yellowblue/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-yellowblue/picture-002.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "2026-07-yellow1",
+      "path": "articles/2026-07-yellow1",
+      "title": "Yellow Delight",
+      "medium": "Acrylic",
+      "dimensions": "60m",
+      "year": "2026",
+      "price": "€200",
+      "category": "painting",
+      "status": "available",
+      "description": "Beutiful shades of yellow",
+      "images": [
+        {
+          "src": "articles/2026-07-yellow1/picture-001.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-yellow1/video-001.mp4",
+          "label": "Process video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-smallthings",
+      "path": "articles/2026-07-smallthings",
+      "title": "Small and Cute",
+      "medium": "Acrylic",
+      "dimensions": "10x10cm",
+      "year": "2026",
+      "price": "€20",
+      "category": "painting",
+      "status": "available",
+      "description": "Small creations",
+      "images": [
+        {
+          "src": "articles/2026-07-smallthings/picture-001.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-002.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-003.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-004.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-005.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-006.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-007.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-smallthings/picture-008.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-smallthings/video-001.mp4",
+          "label": "Process video"
+        },
+        {
+          "src": "articles/2026-07-smallthings/video-002.mp4",
+          "label": "Process video"
+        },
+        {
+          "src": "articles/2026-07-smallthings/video-003.mp4",
+          "label": "Process video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-red",
+      "path": "articles/2026-07-red",
+      "title": "Red Magic",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-07-red/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-red/video-001.mp4",
+          "label": "Video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-mixed",
+      "path": "articles/2026-07-mixed",
+      "title": "Mixed",
+      "medium": "Acrylic",
+      "dimensions": "10x10cm",
+      "year": "2026",
+      "price": "€20",
+      "category": "mixed",
+      "status": "available",
+      "description": "Mixed Media",
+      "images": [
+        {
+          "src": "articles/2026-07-mixed/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-002.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-003.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-004.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-005.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-006.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-007.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-008.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-009.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-010.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-011.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-mixed/picture-012.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-mixed/video-001.mp4",
+          "label": "Process video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-misc1",
+      "path": "articles/2026-07-misc1",
+      "title": "Misc",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-07-misc1/picture-001.jpeg",
+          "color": null,
+          "label": "Picture"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-misc1/video-001.mp4",
+          "label": "Video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-greenblue",
+      "path": "articles/2026-07-greenblue",
+      "title": "Green Blue",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-07-greenblue/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-greenblue/picture-002.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-greenblue/picture-003.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "2026-07-green",
+      "path": "articles/2026-07-green",
+      "title": "Green Black",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-07-green/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-green/video-001.mp4",
+          "label": "Video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-commission1",
+      "path": "articles/2026-07-commission1",
+      "title": "Punjabi vibes",
+      "medium": "Acrylic",
+      "dimensions": "30cm",
+      "year": "2026",
+      "price": "€150",
+      "category": "painting",
+      "status": "Sold",
+      "description": "Beutiful shades of yellow",
+      "images": [
+        {
+          "src": "articles/2026-07-commission1/picture-001.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-commission1/picture-002.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-commission1/picture-003.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-commission1/picture-004.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-07-commission1/video-001.mp4",
+          "label": "Process video"
+        },
+        {
+          "src": "articles/2026-07-commission1/video-002.mp4",
+          "label": "Process video"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-blue-chakra",
+      "path": "articles/2026-07-blue-chakra",
+      "title": "Blue Chakra",
+      "medium": "Acrylic",
+      "dimensions": "30cm",
+      "year": "2026",
+      "price": "€100",
+      "category": "painting",
+      "status": "available",
+      "description": "Beutiful shades of yellow",
+      "images": [
+        {
+          "src": "articles/2026-07-blue-chakra/picture-001.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-07-blue-chakra/picture-002.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "2026-06-buddha2",
+      "path": "articles/2026-06-buddha2",
+      "title": "Peaceful Buddha",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [],
+      "videos": [
+        {
+          "src": "articles/2026-06-buddha2/video-001.mp4",
+          "label": "Video"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-buddha1",
+      "path": "articles/2026-06-buddha1",
+      "title": "Peaceful Buddha",
+      "medium": "Acrylic",
+      "dimensions": "30 cm",
+      "year": "2026",
+      "price": "€60",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-06-buddha1/picture-001.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-06-buddha1/picture-002.jpeg",
+          "color": null,
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-06-buddha1/picture-003.jpeg",
+          "color": null,
+          "label": "Full painting"
+        }
+      ],
+      "videos": [
+        {
+          "src": "articles/2026-06-buddha1/video-001.mp4",
+          "label": "Video"
+        }
+      ]
+    },
+    {
+      "id": "2026-06-buddha",
+      "path": "articles/2026-06-buddha",
+      "title": "Peaceful Buddha",
+      "medium": "Watercolour on 300gsm cold press",
+      "dimensions": "40×55 cm",
+      "year": "2026",
+      "price": "€200",
+      "category": "painting",
+      "status": "available",
+      "description": "Wet-on-wet washes of sap green, Payne's grey and burnt umber, built in long sessions with the paper at a tilt. The soft blooms and bleeds are part of the piece — collaboration between paint and gravity.",
+      "images": [
+        {
+          "src": "articles/2026-06-buddha/buddha-1.jpeg",
+          "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)",
+          "label": "Full painting"
+        },
+        {
+          "src": "articles/2026-06-buddha/buddha-2.jpeg",
+          "color": "linear-gradient(160deg,#b8d5c0,#3a6c49)",
+          "label": "Centre detail"
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Small and Cute",
+  "medium": "Acrylic",
+  "dimensions": "10x10cm",
+  "year": "2026",
+  "price": "€20",
+  "category": "painting",
+  "status": "available",
+  "description": "Small creations",
+  "images": [
+    { "file": "picture-001.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-002.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-003.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-004.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-005.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-006.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-007.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" },
+	{ "file": "picture-008.jpeg", "color": "linear-gradient(135deg,#a8c5b0,#4a7c59)", "label": "Full painting" }
+  ],
+  "videos": [ 
+	{ "file": "video-001.mp4", "label": "Process video" },
+	{ "file": "video-002.mp4", "label": "Process video" },
+	{ "file": "video-003.mp4", "label": "Process video" }
+  ]
+}

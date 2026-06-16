@@ -44,94 +44,20 @@
     <button class="filter-btn" data-filter="mixed">Mixed Media</button>
   </section>
 
-  <!-- GALLERY GRID -->
+  <!-- GALLERY GRID — populated dynamically from articles/manifest.json -->
   <main class="gallery" id="gallery">
-
-    <!-- PIECE 1 -->
-    <article class="piece" data-category="painting" onclick="openPiece('piece1')">
-      <div class="piece-img-wrap">
-        <div class="piece-img" style="background: linear-gradient(135deg,#c9a96e,#8b5e3c);"></div>
-        <span class="piece-badge">Painting</span>
-      </div>
-      <div class="piece-info">
-        <h2 class="piece-title">Golden Hour #3</h2>
-        <p class="piece-medium">Acrylic on canvas · 60×80 cm</p>
-        <span class="piece-price">€240</span>
-      </div>
-    </article>
-
-    <!-- PIECE 2 -->
-    <article class="piece" data-category="textile" onclick="openPiece('piece2')">
-      <div class="piece-img-wrap">
-        <div class="piece-img" style="background: linear-gradient(135deg,#6b7fb3,#3d4f7c);"></div>
-        <span class="piece-badge">Textile</span>
-      </div>
-      <div class="piece-info">
-        <h2 class="piece-title">Woven Tides</h2>
-        <p class="piece-medium">Hand-woven wool · 45×60 cm</p>
-        <span class="piece-price">€380</span>
-      </div>
-    </article>
-
-    <!-- PIECE 3 -->
-    <article class="piece" data-category="sculpture" onclick="openPiece('piece3')">
-      <div class="piece-img-wrap">
-        <div class="piece-img" style="background: linear-gradient(135deg,#b0a090,#6b5a4e);"></div>
-        <span class="piece-badge">Sculpture</span>
-      </div>
-      <div class="piece-info">
-        <h2 class="piece-title">Vessel No. 7</h2>
-        <p class="piece-medium">Hand-thrown ceramic · 22 cm tall</p>
-        <span class="piece-price">€195</span>
-      </div>
-    </article>
-
-    <!-- PIECE 4 -->
-    <article class="piece" data-category="mixed" onclick="openPiece('piece4')">
-      <div class="piece-img-wrap">
-        <div class="piece-img" style="background: linear-gradient(135deg,#d4a5a5,#8b4a4a);"></div>
-        <span class="piece-badge">Mixed Media</span>
-      </div>
-      <div class="piece-info">
-        <h2 class="piece-title">Bloom & Ash</h2>
-        <p class="piece-medium">Paper, ink & dried botanicals · 50×70 cm</p>
-        <span class="piece-price">€310</span>
-      </div>
-    </article>
-
-    <!-- PIECE 5 -->
-    <article class="piece" data-category="painting" onclick="openPiece('piece5')">
-      <div class="piece-img-wrap">
-        <div class="piece-img" style="background: linear-gradient(135deg,#a8c5b0,#4a7c59);"></div>
-        <span class="piece-badge">Painting</span>
-      </div>
-      <div class="piece-info">
-        <h2 class="piece-title">Forest Breath</h2>
-        <p class="piece-medium">Watercolour on paper · 40×55 cm</p>
-        <span class="piece-price">€165</span>
-      </div>
-    </article>
-
-    <!-- PIECE 6 -->
-    <article class="piece" data-category="textile" onclick="openPiece('piece6')">
-      <div class="piece-img-wrap">
-        <div class="piece-img" style="background: linear-gradient(135deg,#e8d5b0,#c4a35a);"></div>
-        <span class="piece-badge">Textile</span>
-      </div>
-      <div class="piece-info">
-        <h2 class="piece-title">Macramé Moon</h2>
-        <p class="piece-medium">Natural cotton cord · 35×90 cm</p>
-        <span class="piece-price">€220</span>
-      </div>
-    </article>
-
+    <p class="gallery-loading">Loading gallery…</p>
   </main>
 
   <!-- LIGHTBOX MODAL -->
   <div class="modal-overlay" id="modalOverlay" onclick="closePiece(event)">
     <div class="modal" id="modal">
       <button class="modal-close" onclick="closePiece()">&#x2715;</button>
-      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-media-wrap">
+        <div class="modal-media" id="modalMedia"></div>
+        <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">&#x2039;</button>
+        <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">&#x203A;</button>
+      </div>
       <div class="modal-body">
         <div class="modal-header">
           <div>
@@ -158,7 +84,6 @@
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
   <script src="js/gallery.js"></script>
 </body>
 </html>
